@@ -332,18 +332,25 @@
 <fieldset class="fieldset-form" >
  <label for="name" class="modal-label">Imię</label>
     <svg class="form-icon" width="20" height="20"><use href="./images/icons.svg.svg#person-icon"></use></svg>
-     <input class="form-input" type="text" id="name" /></fieldset>
+     <input name="name" class="form-input" type="text" id="name" /></fieldset>
    
 <fieldset class="fieldset-form" >
  <label for="phone" class="modal-label">Telefon</label>
      <svg class="form-icon" width="20" height="20"><use href="./images/icons.svg.svg#phone-icon"></use></svg>
-    <input class="form-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="phone" /></fieldset>
+    <input name="phone-number" class="form-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="phone" /></fieldset>
   
 <fieldset class="fieldset-form" >
  <label for="email" class="modal-label">Email</label>
      <svg class="form-icon" width="20" height="20"><use href="./images/icons.svg.svg#email-icon"></use></svg>
-    <input class="form-input" type="email" id="email" /></fieldset>
-  
+    <input name="email-address" class="form-input" type="email" id="email" /></fieldset>
+  <fieldset class="fieldset-form-textarea" >
+ <label  class="modal-label">Komentarz</label>
+    <textarea name="comment" rows="5"
+  cols="30" class="form-textarea" placeholder="Wprowadź tekst"></textarea></fieldset>
+  <label class="legal-checkbox">
+    <input type="checkbox" id="legal" />
+    Oświadczam iż akceptuję <span class="checkbox-conditions" >Regulamin</span> i <span class="checkbox-conditions">Politykę Prywatności</span>.
+  </label>
 </form></div>
     </div>
       <script src="./js/modal.js"></script>

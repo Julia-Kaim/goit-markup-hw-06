@@ -576,7 +576,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  height: auto;
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
@@ -670,7 +670,7 @@ body {
 }
 .form-input {
   line-height: 40px;
-margin-left: 30px;
+  margin-left: 30px;
   border-radius: 4px;
   position: absolute;
   border: 0;
@@ -685,4 +685,44 @@ margin-left: 30px;
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.fieldset-form-textarea {
+  display: flex;
+  position: relative;
+  border: 0px;
+  border-radius: 5px;
+  padding: 0px;
+  margin-top: 40px;
+  margin-inline: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #21212133;
+  height: 120px;
+  width: 448px;
+}
+.form-textarea {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.form-textarea:focus {
+  outline: 0;
+}
+.legal-checkbox {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-left: 50px;
+}
+.checkbox-conditions {
+  color: #2196f3;
 }
