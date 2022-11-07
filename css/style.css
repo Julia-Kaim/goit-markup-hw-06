@@ -309,6 +309,7 @@ body {
   width: 1200px;
   margin: 0px;
   display: flex;
+  position: relative;
 }
 .logo-footer {
   display: block;
@@ -686,6 +687,9 @@ body {
   top: 10px;
   left: 10px;
 }
+.modal-label:focus svg {
+  fill: var(--logo-color);
+}
 .fieldset-form-textarea {
   display: flex;
   position: relative;
@@ -744,4 +748,55 @@ body {
   margin-inline: 160px;
   margin-top: 20px;
   margin-bottom: 55px;
+}
+.fieldset-form:focus-within {
+  border-color: #2196f3;
+}
+.fieldset-form-textarea:focus-within {
+  border-color: #2196f3;
+}
+/* Footer newsletter */
+.newsletterform-positioning {
+  display: flex;
+ 
+.form-newsletter {
+  position: absolute;
+}
+.newsletter-header {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--white-content);
+  text-transform: uppercase;
+ 
+  top: 50px;
+}
+.fieldset-newsletter {
+  display: flex;
+  position: absolute;
+  
+  border-radius: 5px;
+  padding: 0px;
+  margin-block: 40px;
+  margin-inline: 40px;
+
+  height: 50px;
+  width: 358px;
+  border: 1px solid #ffffff4d;
+}
+.newsletter-input {
+  line-height: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+}
+.newsletter-input:focus {
+  outline: 0;
 }
